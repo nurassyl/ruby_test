@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  username: nurasyl
+  password: 12345
+
+development:
+  <<: *default
+  database: curking_dev
+
+test:
+  <<: *default
+  database: curking_test
+
+production:
+  <<: *default
+  database: curking
