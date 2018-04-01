@@ -6,8 +6,8 @@ class CreateBtcPrices < ActiveRecord::Migration[5.1]
 		t.float :price_btc # BTC price
 		t.float :price_usd # USD price
 		t.float :market_cap_usd # USD total
-		t.float :total_supply, limit: 4 # BTC total
-		t.float :available_supply, limit: 4 # Available BTC total
+		t.float :total_supply # BTC total
+		t.float :available_supply # Available BTC total
 		t.float :max_supply, null: true # Maximum BTC for supply
 		t.integer :last_updated # Unix timestamps
 		# t.timestamps
