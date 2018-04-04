@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-url = URI "https://api.coinmarketcap.com/v1/ticker/"
+url = URI "https://api.coinmarketcap.com/v1/ticker/?limit=0"
 begin
 	while true
 		data = JSON.parse Net::HTTP.get(url)

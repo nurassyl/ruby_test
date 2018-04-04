@@ -168,6 +168,17 @@ exit
 
 ------------
 
+Get prices
+```
+rails runner tasks/get_prices.rb
+```
+Kill process
+```
+kill -9 <PID>
+```
+
+------------
+
 Markdown edited [here](https://pandao.github.io/editor.md/en.html "here")
 
 ------------
