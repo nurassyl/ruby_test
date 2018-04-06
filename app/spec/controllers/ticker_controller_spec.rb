@@ -11,10 +11,7 @@ RSpec.describe TickerController, type: :controller do
 			expect(response.status).to eq 200
 		end
 		it 'body' do
-			get :index, :params => {
-				:name => 'Nurasyl',
-				:age => 21
-			}
+			get :index, :params => {}
 			puts response.body
 		end
 	end

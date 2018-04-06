@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180331125330) do
 
   create_table "btc_prices", force: :cascade do |t|
     t.string "name", limit: 50
-    t.string "symbol", limit: 5
+    t.string "symbol", limit: 10
     t.float "price_btc"
     t.float "price_usd"
     t.float "market_cap_usd"
